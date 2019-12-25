@@ -22,7 +22,7 @@ def main():
     :return:
     """
     parser = argparse.ArgumentParser(description='Collect data from dht22 sensor')
-    parser.add_argument('-n', '--deviceId', help='DeviceId for influx measurement. defaults to hostname')
+    parser.add_argument('-n', '--deviceId', help='DeviceId for influx measurement. (defaults to /etc/hostname)')
     parser.add_argument('-i', '--influx', help='Influx DB host')
     parser.add_argument('-d', '--database', help='InfluxDB database')
     args = parser.parse_args()
